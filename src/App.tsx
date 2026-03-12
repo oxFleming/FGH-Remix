@@ -635,8 +635,10 @@ export default function App() {
         </div>
       </div>
       
-      {/* About Us Section */}
-      <div id="who-we-are" className="w-full bg-[#fafafa] text-black py-24 md:py-40 px-6 md:px-12 overflow-hidden" data-theme="light">
+      {/* Scaled Down Content Wrapper */}
+      <div style={{ zoom: 0.95 }}>
+        {/* About Us Section */}
+        <div id="who-we-are" className="w-full bg-[#fafafa] text-black py-24 md:py-40 px-6 md:px-12 overflow-hidden" data-theme="light">
         <div className="max-w-[1400px] mx-auto">
           {/* Title */}
           <h2 className="about-text text-6xl md:text-7xl lg:text-[90px] font-serif tracking-tight text-gray-900 mb-8 ml-0 md:ml-[5%]">
@@ -814,7 +816,7 @@ export default function App() {
           </motion.button>
         )}
       </AnimatePresence>
-
+      </div>
     </div>
   );
 }
